@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="selectRounds" class="box">
+        <!--JAVASCRIPT -->
+        <p>How many rounds?</p>
+        <div id="roundsContainer">
+            <label for="five">
+                <input type="radio" id="five" name="rounds">5
+            </label>
+
+            <label for="ten">
+                <input type="radio" id="ten" name="rounds">10
+            </label>
+
+            <label for="fifteen">
+                <input type="radio" id="fifteen" name="rounds">15
+            </label>
+
+            <label for="twenty">
+                <input type="radio" id="twenty" name="rounds">20
+            </label>
+        </div>
+        <div id="roundCounterDiv"><span id="roundCounter"></span> / <span id="roundLimit"></span></div>
+    </div>
+
+    <div id="scoreboard" class="box">
+        <div class="playerBanner">USER</div>
+        <h2><span id="userChoice">0</span> : <span id="computerChoice">0</span></h2>
+        <!--JAVASCRIPT -->
+        <div class="playerBanner">COMP</div>
+    </div>
+
+    <div id="rockPaperScissors">
+        <p id="letsPlay">LET'S PLAY</p>
+        <!--JAVASCRIPT -->
+        <div id="icons">
+            <img src="assets/img/rock.png" alt="" onclick="theGame(rock)" id="rock">
+            <img src="assets/img/paper.png" alt="" onclick="theGame(paper)" id="paper">
+            <img src="assets/img/scissors.png" alt="" onclick="theGame(scissors)" id="scissors">
+        </div>
+
+        <p>MAKE YOUR MOVE</p>
+        <a href="#" onclick="restart()">restart</a>
+    </div>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    height: 5vh;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(36, 39, 47);
+    color: white;
+    height: 100vh;
+}
+.box {
+    border: 3px solid white;
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+#selectRounds {
+    text-align: center;
+    height: 160px;
+}
+#roundCounterDiv{
+    font-size: 2rem;
+    display: none;
+}
+#scoreboard {
+    font-size: 2rem;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playerBanner {
+    background-color: red;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0 30px;
+}
+#score {
+}
+#rockPaperScissors {
+    margin: 50px auto;
+    text-align: center;
+}
+a {
+    color: goldenrod;
+}
+img {
+    width: 70px;
+    margin: 0 10px;
+}
+img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+#letsPlay {
+    font-size: 1.3rem;
+}
+#roundsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px;
+}
