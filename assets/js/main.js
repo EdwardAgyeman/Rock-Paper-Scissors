@@ -7,7 +7,12 @@ let roundCounter = document.getElementById("roundCounter"),
     fifteen = document.getElementById("fifteen"),
     twenty = document.getElementById("twenty"),
     counter = 0,
-    userChoice = "rock"
+    userChoice = "rock",
+    userScoreDiv = document.getElementById("user-score"),
+    computerScoreDiv = document.getElementById("computer-score"),
+    userScore = 0,
+    computerScore = 0
+
 
 function theGame() {
     roundsContainer.style.display = "none"
@@ -56,9 +61,18 @@ function theGame() {
             case 'scissorsscissors':
                 return 'draw';
         }
+        let result = compare(userChoice, computerChoice)
+        if (result == "win") {
+            userScore++;
+        }
+        if (result == "lost") {
+            computerScore++;
+        }
+        userScoreDiv.innerHTML = userScore;
+        computerScoreDiv.innerHTML = computerScore
     }
 
-    
+
     console.log(computerChoice())
     console.log(compareUsers())
 }
